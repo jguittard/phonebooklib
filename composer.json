@@ -1,0 +1,40 @@
+{
+  "name": "jguittard/phonebooklib",
+  "description": "Library for use with Apigility training examples",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "apigility",
+    "framework",
+    "zf2",
+    "phonebook"
+  ],
+  "homepage": "http://apigility.org/",
+  "support": {
+    "email": "apigility-users@zend.com",
+    "irc": "irc://irc.freenode.net/apigility",
+    "source": "https://github.com/jguittard/phonebooklib",
+    "issues": "https://github.com/jguittard/phonebooklib/issues"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "require": {
+    "php": ">=5.5",
+    "zendframework/zend-config": "~2.4",
+    "zendframework/zend-db": "~2.4",
+    "zendframework/zend-paginator": "~2.4",
+    "zendframework/zend-stdlib": "~2.4",
+    "zfcampus/zf-configuration": "~1.0-dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "PhonebookLib\\": "src/"
+    },
+    "classmap": [
+      "Module.php"
+    ]
+  }
+}
