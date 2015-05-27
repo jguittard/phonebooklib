@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Phonebook\Model;
+namespace Phonebook\Model;
 
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\ResultSet\HydratingResultSet;

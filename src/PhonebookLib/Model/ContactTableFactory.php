@@ -3,7 +3,6 @@
 namespace PhonebookLib\Model;
 
 use DomainException;
-use ZF\Phonebook\Model\ContactTable;
 
 /**
  * Class ContactTableFactory
@@ -18,7 +17,7 @@ class ContactTableFactory
      */
     public function __invoke($services)
     {
-        $db = 'Zend\Db\Adapter\Adapter';
+        $db = 'DB\PhonebookLib';
         $table = 'contact';
 
         if (!$services->has($db)) {
