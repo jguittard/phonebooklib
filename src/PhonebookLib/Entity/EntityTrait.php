@@ -23,4 +23,15 @@ trait EntityTrait
     {
         return $this->id;
     }
+
+    /**
+     * @param int $id
+     * @return EntityInterface
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
 }
