@@ -23,7 +23,7 @@ class ContactTableFactory
 
         if (!$services->has($db)) {
             throw new DomainException(sprintf(
-                'Unable to create StatusLib\TableGateway due to missing "%s" service',
+                'Unable to create PhonebookLib\Table\Contact due to missing "%s" service',
                 $db
             ));
         }

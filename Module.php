@@ -2,10 +2,14 @@
 
 namespace PhonebookLib;
 
-
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
+/**
+ * Class Module
+ *
+ * @package PhonebookLib
+ */
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface
 {
     /**
