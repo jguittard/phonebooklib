@@ -56,10 +56,6 @@ class ContactMapper implements MapperInterface
      */
     public function fetch($id)
     {
-        if (!is_int($id)) {
-            throw new DomainException('Invalid identifier provided', 404);
-        }
-
         $resultSet = $this->table->select(compact('id'));
         if (0 === count($resultSet)) {
             throw new DomainException('Contact entry not found', 404);
@@ -82,9 +78,6 @@ class ContactMapper implements MapperInterface
      */
     public function update($id, $data)
     {
-        if (!is_int($id)) {
-            throw new DomainException('Invalid identifier provided', 404);
-        }
         if ($data instanceof Traversable) {
             $data = ArrayUtils::iteratorToArray($data);
         }
@@ -116,10 +109,6 @@ class ContactMapper implements MapperInterface
      */
     public function delete($id)
     {
-        if (!is_int($id)) {
-            throw new DomainException('Invalid identifier provided', 404);
-        }
-
         $result = $this->table->delete(compact('id'));
 
         if (!$result) {
