@@ -41,7 +41,8 @@ class ContactMapper implements MapperInterface
         if (! isset($data['createdAt'])) {
             $data['createdAt'] = date('Y-m-d H:i:s');
         }
-        $id = $this->table->insert($data);
+        $this->table->insert($data);
+        $id = $this->table->getLastInsertValue();
 
         $resultSet = $this->table->select(compact('id'));
         if (0 === count($resultSet)) {
