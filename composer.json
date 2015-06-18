@@ -23,10 +23,10 @@
   },
   "require": {
     "php": ">=5.3.23",
-    "zendframework/zend-config": "~2.4",
-    "zendframework/zend-db": "~2.4",
-    "zendframework/zend-paginator": "~2.4",
-    "zendframework/zend-stdlib": "~2.4",
+    "zendframework/zend-config": "~2.5",
+    "zendframework/zend-db": "~2.5",
+    "zendframework/zend-paginator": "~2.5",
+    "zendframework/zend-stdlib": "~2.5",
     "zfcampus/zf-configuration": "~1.0-dev"
   },
   "autoload": {

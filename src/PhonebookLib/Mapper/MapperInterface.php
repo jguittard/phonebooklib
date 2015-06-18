@@ -25,9 +25,10 @@ interface MapperInterface
     public function fetch($id);
 
     /**
+     * @param array $params
      * @return Paginator
      */
-    public function fetchAll();
+    public function fetchAll(array $params);
 
     /**
      * @param string $id

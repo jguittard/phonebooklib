@@ -10,7 +10,7 @@ CREATE TABLE "contact" (
     phone VARCHAR(20) NULL,
     notes VARCHAR(2000) NULL,
     avatar VARCHAR(255) NULL,
-    createdAt VARCHAR(20) NOT NULL,
-    updatedAt VARCHAR(20) NULL
+    created_at VARCHAR(20) NOT NULL,
+    updated_at VARCHAR(20) NULL
 );
 COMMIT;

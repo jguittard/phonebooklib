@@ -65,11 +65,12 @@ class ContactMapper implements MapperInterface
     }
 
     /**
+     * @param array $params
      * @return Paginator
      */
-    public function fetchAll()
+    public function fetchAll(array $params = array())
     {
-        return new Paginator(new DbTableGateway($this->table, null, array('createdAt' => 'DESC')));
+        return new Paginator(new DbTableGateway($this->table, $params, array('createdAt' => 'DESC')));
     }
 
     /**
